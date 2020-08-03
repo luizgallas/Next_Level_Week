@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {Link} from 'react-router-dom' /* Usado para utilizar single-page-application */
+
 import logoImg from '../../assets/images/logo.svg';
 
 import landingImg from '../../assets/images/landing.svg';
@@ -12,7 +14,7 @@ import './styles.css';
 
 function Landing() {
     return (
-        <div id="page-lading">
+        <div id="page-landing">
             <div id="page-landing-content" className="container">
                 <div className="logo-container">
                     <img src={logoImg} alt="Proffy" />
@@ -21,15 +23,15 @@ function Landing() {
                 <img className="hero-image" src={landingImg} alt="plataforma de estudos"/>
 
                 <div className="buttons-container">
-                    <a href="" className="study">
+                    <Link to="/study" className="study">
                         <img src={studyIcon} alt="Estudar"/>
                         Estudar
-                    </a>
+                    </Link>
 
-                    <a href="" className="give-classes">
+                    <Link to="/give-classes" className="give-classes"> 
                         <img src={giveClassesIcon} alt="Dar aulas"/>
                         Dar aulas
-                    </a>
+                    </Link>
                 </div>
 
                 <span className="total-conections">
@@ -42,4 +44,4 @@ function Landing() {
     )
 }
 
-export default Landing
+export default Landing;

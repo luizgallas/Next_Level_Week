@@ -47,6 +47,7 @@ input,
 button,
 textarea {
     font: 500px 1.6rem Poppins; /* Weigh, size(60% a mais que o weigh, usado para responsibilidade), fontType */
+    color: var(--color-text-base);
 }
 
 .container {
